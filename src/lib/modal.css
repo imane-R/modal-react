@@ -1,0 +1,43 @@
+
+    .modal{
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+    }
+    .modalOverlay{
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background: #94d1ec;
+    }
+    .modalContent{
+        position:absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-Height: 1.4;
+        background: #f1f1f1;
+        padding: 14px 28px;
+        border-radius: 3px;
+        max-width: 600px;
+        min-width: 300px;
+    }
+    .modalClose{
+        position: absolute;
+        width: 25px;
+        height: 23px;
+        top: -5px;
+        right: -5px;
+        size: 14px;
+        border: none;
+        background: #000;
+        border-radius: 50%;
+    }
