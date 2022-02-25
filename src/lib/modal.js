@@ -10,10 +10,13 @@ import './modal.css';
 export const Modal = ({ modalmessage, color, modalClose, buttonContent }) => {
     return (
         <div className="modal">
-            <div onClick={modalClose} className="modalOverlay">   </div>
+            <div onClick={modalClose} className="modalOverlay"></div>
             <div className="modalContent">
                 <p>{modalmessage}</p>
                 <button onClick={modalClose} style={{ background: `${color}` }} className="modalClose">
+                    {buttonContent}
+                </button>
+                <button onClick={modalClose} style={{ background: `${color}` }} className="button">
                     {buttonContent}
                 </button>
             </div>
