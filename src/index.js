@@ -12,7 +12,7 @@ export const App = () => {
     return (
         <div>
             <button onClick={toggle}>Open Model</button>
-            <Modal isShowing={isShowing} modalMessage="Employee Created!" backgroundColor="#9b2226" toggle={toggle}  />
+            <Modal isShowing={isShowing} modalMessage="Employee Created!"  toggle={toggle}  />
         </div>
        
     );

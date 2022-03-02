@@ -4,10 +4,9 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 /** Display modal
  * @param  {string} modalMessage
- * @param  {string} color
- * @param  {boolean} modalOpen
- * @param  {function} modalClose
- * @param  {string} buttonContent
+ * @param  {boolean} isShowing
+ * @param  {function} toggle
+ * @param  {object} style
  */
 
 const Modal = ({ isShowing, modalMessage, style, toggle }) => {
