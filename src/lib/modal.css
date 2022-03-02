@@ -32,12 +32,6 @@
     }
     .modalClose{
         position: absolute;
-        width: 25px;
-        height: 23px;
-        top: -5px;
-        right: -5px;
-        size: 14px;
-        border: none;
-        background: #000;
-        border-radius: 50%;
+        top: -8px;
+        right: -8px;
     }
