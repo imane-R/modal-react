@@ -13,7 +13,7 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 export const Modal = ({ modalmessage, toggleModal, backgroundColor}) => {
     return (
         <div className="modal" style={{ backgroundColor: {backgroundColor}}}>
-            <div onClick={modalClose} className="modalOverlay"></div>
+            <div onClick={toggleModal} className="modalOverlay"></div>
             <div className="modalContent" >
                 <p>{modalmessage}</p>
                 <div onClick={toggleModal}  className="modalClose">

@@ -17,6 +17,7 @@
         bottom: 0;
         position: fixed;
         background: #94d1ec;
+        opacity: 0.33;
     }
     .modalContent{
         position:absolute;
