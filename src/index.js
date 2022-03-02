@@ -1,7 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from "react";
 import { Modal } from "./lib/modal"
+import ReactDOM from "react-dom";
 
+export const App = () => {
+    const [isShowing, setIsShowing] = useState(false);
+
+    function toggle() {
+        setIsShowing(!isShowing);
+    }
+
+    return (
+        <div>
+            <button onClick={toggle}>Open Model</button>
+            <Modal isShowing={isShowing} modalMessage="Employee Created!" backgroundColor="#9b2226" toggle={toggle}  />
+        </div>
+       
+    );
+};
 ReactDOM.render(
-    <Modal/>,
+    <App />,
     document.getElementById("root"));

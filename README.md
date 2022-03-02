@@ -17,15 +17,35 @@ import React, { useState } from "react";
 import { Modal } from "react-modal-ib";
 
 export const App = () => {
-  const [showModel, setShowModel] = useState(false);
+    const [isShowing, setIsShowing] = useState(false);
 
-  const toggleModal = () => {
-    setModalOpen(!modalOpen);
-  };
-  return (
-    <>
-         {showModel && <Modal modalmessage="Employee Created!"  toggleModal={toggleModal} backgroundColor={white}/>}
-    </>
-  );
+    function toggle() {
+        setIsShowing(!isShowing);
+    }
+
+    return (
+        <div>
+            <button onClick={toggle}>Open Model</button>
+            <Modal isShowing={isShowing} modalMessage="Employee Created!" toggle={toggle}/>
+        </div>
+       
+    );
 };
 ```
+there is also a custom style
+
+```js
+const customStyle = {
+  overlay: {
+    backgroundColor: "red",
+  },
+  content: {
+    borderRadius: "10px",
+  },
+  close: {
+    margin: "5px 17px",
+   fontSize: "14px",
+  },
+};
+
+<Modal Showing={isShowing} modalMessage="Employee Created!" toggle={toggle}  style={customStyle} />;
