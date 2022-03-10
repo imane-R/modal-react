@@ -1,6 +1,7 @@
 # modal-react
 
 [github](https://github.com/imane-R/modal-react.git)
+[npmjs](https://www.npmjs.com/package/react-modal-ib)
 
 ## Installation
 
